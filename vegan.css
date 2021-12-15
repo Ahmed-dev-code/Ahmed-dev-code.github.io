@@ -1,0 +1,501 @@
+:root {
+  --green-yellow: rgb(170, 210, 54);
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/*---------------- top navigation bar--------------------*/
+.nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+.menu-items {
+  display: none;
+}
+li {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+ul {
+  display: flex;
+}
+.d {
+  position: relative;
+}
+.d:hover .drop-content {
+  display: block;
+}
+.drop-content ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+}
+.drop-content {
+  display: none;
+  position: absolute;
+  left: -60%;
+  width: 160%;
+  border-top: 2px solid var(--green-yellow);
+  padding: 10px 0;
+  box-shadow: 0 2px 5px #ccc;
+  background-color: white;
+}
+.drop-content ul li a {
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+.drop-content ul li:nth-of-type(3) a {
+  border-bottom: 0px solid #ccc;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px 10px 10px 28px;
+}
+.buy {
+  background-color: var(--green-yellow);
+  color: white;
+  font-size: 12px;
+  padding: 8px 34px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 0;
+}
+
+/*------------------------- home section------------------ */
+.home {
+  background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+.home h1 {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 8.8px;
+  line-height: 1.2;
+}
+.home p {
+  font-size: 14px;
+  color: #8b8b99;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+/*---------------------step section--------------------*/
+
+.step {
+  text-align: center;
+  color: white;
+  height: 465px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 1.35rem;
+}
+.step h2 {
+  font-weight: 600;
+}
+.step p {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+}
+
+.step i {
+  font-size: 96px;
+}
+.step:hover i {
+  transform: scale(1.1);
+}
+
+.one {
+  background-color: #5acda6;
+}
+.two {
+  background-color: #91ac41;
+}
+.three {
+  background-color: #e4b476;
+}
+.four {
+  background-color: #f69dad;
+}
+
+/*------------------store section-------------------- */
+
+.store {
+  background-color: #f7eee2;
+  text-align: center;
+  padding-top: 35px;
+}
+.heading h2 {
+  font-family: "Caveat", cursive;
+  color: #91ac41;
+  margin: 0px;
+}
+.store .heading {
+  margin-top: 35px;
+  margin-bottom: 75px;
+}
+.heading h1 {
+  font-size: 44px;
+  margin: 0px;
+}
+.store-item:hover i {
+  position: relative;
+  transform: scale(1.1);
+}
+
+.store p {
+  color: #8b8b99;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.store i {
+  font-size: 60px;
+  color: white;
+  background-color: #e3b375;
+  padding: 40px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+.store-item {
+  height: 320px;
+}
+
+/*----------------shop section---------------------- */
+.shop {
+  text-align: center;
+}
+.shop .heading {
+  margin: 4rem 0;
+}
+.shop .heading h1 {
+  font-size: 28px;
+  margin-top: 0;
+}
+.shop .heading p {
+  font-size: 16px;
+  color: #8b8b99;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+.testimonial-card {
+  background-color: #f5f6fb;
+  border-radius: 45px;
+  border-top-right-radius: 0;
+  margin: 1.75rem 1rem;
+  padding: 30px 20px;
+}
+
+.testimonial-card img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.testimonial-card p {
+  color: #8b8b99;
+  font-size: 14px;
+  letter-spacing: 00.5px;
+  font-style: italic;
+}
+
+.testimonial-card h2{
+    font-size: 16px;
+}
+
+/*-------------------follow section------------------*/
+
+.follow aside img {
+  width: 100%;
+}
+
+.follow main {
+  background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png);
+  background-position: center;
+  background-size: cover;
+  padding: 35px 28px 8px 17px;
+}
+.follow main h1 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 17px;
+}
+.follow main p {
+  color: #8b8b99;
+}
+
+.follow main input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  color: #8b8b99;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  padding: 0 14px;
+  margin-top: 35px;
+  border-radius: 4px;
+}
+input:focus {
+  outline: none;
+}
+
+.follow main button {
+  background-color: #f69dad;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  border: none;
+  color: white;
+  padding: 14px 44px;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+.follow main button:hover {
+  background-color: transparent;
+  outline: 1px solid #f69dad;
+  color: #f69dad;
+}
+
+/*----------------stats section--------------------*/
+.stats {
+  background-color: #f5f6fb;
+  text-align: center;
+  padding: 35px 0 90px;
+}
+.stats h1 {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 0;
+  margin: 35px;
+}
+.stats p {
+  color: #57e3b5;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-style: italic;
+  margin: 0;
+}
+
+/*---------------------video section*-----------*/
+.video h1 {
+  font-size: 44px;
+  text-align: center;
+  color: #8b8b99;
+}
+hr {
+  background-color: #e4b476;
+  width: 100px;
+  height: 1px;
+  border: none;
+  margin-bottom: 70px;
+}
+
+/*----------------contact section------------- */
+
+.contact {
+  margin: 35px 20px;
+  margin-bottom: 0;
+}
+.contact-us {
+  margin-bottom: 4rem;
+}
+
+.contact-us h2:nth-of-type(1) {
+  font-family: "Caveat", cursive;
+  color: #91ac41;
+  margin: 0px;
+}
+.contact-us h1 {
+  font-size: 44px;
+  margin: 0;
+}
+
+.contact p {
+  color: #8b8b99;
+  letter-spacing: 0.5px;
+}
+.get-in-touch h2:nth-of-type(1) {
+  font-family: "Caveat", cursive;
+  color: #91ac41;
+  margin: 0px;
+}
+
+.get-in-touch h1 {
+  font-size: 44px;
+  margin: 0;
+}
+
+.get-in-touch input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 16px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  border: 1px solid #e5e6ec;
+  border-radius: 4px;
+  color: #8b8b99;
+}
+.get-in-touch [type="submit"] {
+  padding: 9px 34px;
+  border-radius: 4px;
+  width: unset;
+  border: none;
+  background-color: rgb(170, 210, 54);
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+textarea {
+  border: 1px solid #e5e6ec;
+  width: 100%;
+  height: 70px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 16px;
+  font-size: 16px;
+  color: #8b8b99;
+  font-family: "Poppins", sans-serif;
+}
+textarea:focus {
+  outline: none;
+}
+
+/*------------------footer--------------------- */
+footer {
+  background-color: #232323;
+  color: white;
+  padding: 30px 0px;
+  
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+/*----------------- +900 screens--------------------*/
+
+@media only screen and (min-width:900px) {
+    .menu-items{
+        display: flex;
+    }
+    /* ---------------home section----------*/
+    .home h1{
+        font-size: 44px;
+    }
+    .home {
+        padding: 0 8rem;
+    }
+
+    /* -------------- steps section -------------*/
+    .steps{
+        display: flex;
+        
+    }
+    .step{
+        width: 25%;
+        justify-content: flex-start;
+        padding:112px 34px  ;
+        
+        box-sizing: content-box;
+    }
+
+
+    /* --------------- store section --------*/
+
+    .store{
+        padding: 35px 0rem 8rem 0rem;
+    }
+
+    .store-item{
+        width: 25%;
+        margin: px;
+        padding: 0 2rem;
+        box-sizing: border-box;
+    }
+    .store-item-wrapper{
+        display: flex;
+    }
+
+    /* ------------- shop section ---------*/
+    .shop{
+        padding: 35px 4rem;
+    }
+    .shop .heading p{
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    
+    .testimonial-card{
+        width: 33%;
+    
+    }
+    .testimonial-card-wrapper{
+        display: flex;
+
+    }
+
+    /*-------------- follow section ---------*/
+    .follow{
+        display: flex;
+    }
+
+    /*-------------- stats section -------------*/
+    .stats {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 100px 0;
+    }
+
+    .stat-container{
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* --------------- contact section ------------*/
+    .contact{
+      display: flex;
+      justify-content: space-around;
+      padding: 75px 0;
+      }
+    .contact-us{
+      margin-right: 100px ;
+      padding: 0 10px;
+    }
+    .get-in-touch{
+      padding-right: 10px;
+    }
+
+    /*-------------- footer */
+    footer{
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+}
